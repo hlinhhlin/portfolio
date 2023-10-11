@@ -6,96 +6,93 @@
     <title>Sirapat's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface"/>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
+<nav clsss="navbar">
+    <img src="/src/profile.jpg" class="center">
+    <h2>Sirapat E.</h2>
+    <div class="btn-group">
+        <button><a href="#about" class="font">About</a></button>
+        <button><a href="#education" class="font">Education</a></button>
+        <button><a href="#skill" class="font">Skill</a></button>
+        <button><a href="#experience" class="font">Experience</a></button>
+    </div>
+</nav>
 <main>
-    <article>
-        <p class="font-weight-bold" style="font-size: 40px;">Sirapat</p>
-        <p class="font-weight-bold" style="font-size: 40px;">Eiamassavamongkol</p>
-        <br>
-        <p class="font-italic" style="font-size: 35px;">Digital Engineering student</p>
+    <article class="welcome">
+        <h1 style="font-size: 64px; margin-top: 0px;">Sirapat Eiamassavamongkol</h1>
+        <div class="typewriter">
+            <h1>I am a Digital Engineeing student</h1>
+        </div>
     </article>
-    <nav class="vstack gap-4" style="align-items: center;">
-        <img src="/src/profile.jpg">
-        <div class="vstack gap-4" style="align-items: center;">
-            <button><a href="#about">About</a></button>
-            <button><a href="#education">Education</a></button>
-            <button><a href="#skill">Skill</a></button>
-            <button><a href="#project">Project</a></button>
-            <button><a href="#experience">Experience</a></button>
-        </div>
-    </nav>
-    <section id="about" style="padding: 20px;" class="vstack py-5">
-        <h1 style="text-align: center; margin-bottom: 20px;"><strong>About</strong></h1>
-        <div class="parent" style="font-size: 25px;">
-            <img src="/src/profile.jpg" width="300px" style="display: block; margin: auto;">
+    <article id="about">
+        <h1><strong>About</strong></h1>
+        <div class="parent">
+            <img src="/src/profile.jpg" width="400px">
             <div>
                 <ul>
-                    <li><span class="material-icons" style="color: #b15757;">arrow_forward_ios</span> <strong class="very-dark-blue-font">Birthday:</strong> <span class="very-dark-blue-font">30 June 2002</span></li>
-                    <li><span class="material-icons" style="color: #b15757;">arrow_forward_ios</span><strong class="very-dark-blue-font">Phone:</strong> <span class="very-dark-blue-font">+66 88 622 5556</span></li>
-                    <li><span class="material-icons" style="color: #b15757;">arrow_forward_ios</span><strong class="very-dark-blue-font">City:</strong> <span class="very-dark-blue-font">Bangkok, Thailand</span></li>
+                    <li><strong>Birthday:</strong> <span>30 June 2002</span></li>
+                    <li><strong>Phone:</strong> <span>+66 88 622 5556</span></li>
+                    <li><strong>City:</strong> <span>Bangkok, Thailand</span></li>
                   </ul>
             </div>
             <div>
                 <ul>
-                    <li><span class="material-icons" style="color: #b15757;">arrow_forward_ios</span><strong class="very-dark-blue-font">Age:</strong> <span class="very-dark-blue-font">21</span></li>
-                    <li><span class="material-icons" style="color: #b15757;">arrow_forward_ios</span><strong class="very-dark-blue-font">Currently Study:</strong> <span class="very-dark-blue-font">Third year in Digital Engineering</span></li>
-                    <li><span class="material-icons" style="color: #b15757;">arrow_forward_ios</span><strong class="very-dark-blue-font">Email:</strong> <span class="very-dark-blue-font">hlinhhlin@gmail.com</span></li>
+                    <li><strong>Age:</strong> <span>21</span></li>
+                    <li><strong>Currently Study:</strong> <span>Third year in Digital Engineering</span></li>
+                    <li><strong>Email:</strong> <span>hlinhhlin@gmail.com</span></li>
                   </ul>
             </div>
         </div>
-    </section>
-    <section id="education">
-        <div class="container py-5" style="font-size: 20px;">
-            <h1 style="text-align: center; margin-bottom: 20px;"><strong>Education</strong></h1>
-            <div class="row">
-              <div class="col-md-6 offset-md-3">
-                <ul class="timeline-3">
-                  <li>
-                    <a href="#!">Mathayom 1-3</a>
-                    <a href="#!" class="float-end">2015-2017</a>
-                    <p class="mt-2">Triam Udom Suksa Pattanakarn School <br> Bangkok, Thailand</p>
-                  </li>
-                  <li>
-                    <a href="#!">Mathayom 4-6</a>
-                    <a href="#!" class="float-end">2018-2020</a>
-                    <p class="mt-2">Triam Udom Suksa School <br> Bangkok, Thailand</p>
-                  </li>
-                  <li>
-                    <a href="#!">Undergraduate degree</a>
-                    <a href="#!" class="float-end">2021-Present</a>
-                    <p class="mt-2">Sirindhorn International Institute of Technology (SIIT), Thammasat University <br> Bachelor of Engineering (Digital Engineering) <br> Pathum Thani, Thailand</p>
-                  </li>
+    </article>
+    <article id="education">
+        <h1><strong>Education</strong></h1>
+        <div class="timeline">
+            <span class="dot"></span>
+            <span class="year">2015-2017</span>
+            <div class="container">
+                <span style="font-size: 35px;"><strong>Mathayom 1 - Mathayom 3</strong></span><br>
+                <span style="font-size: 30px;">Triam Udom Suksa Pattanakarn School</span><br>
+                <span style="font-size: 30px;">Bangkok, Thailand</span>
+            </div>
+            <span class="dot"></span>
+            <span class="year">2018-2020</span>
+            <div class="container">
+                <span style="font-size: 35px;"><strong>Mathayom 4 - Mathayom 6</strong></span><br>
+                <span style="font-size: 30px;">Triam Udom Suksa School</span><br>
+                <span style="font-size: 30px;">Bangkok, Thailand</span>
+            </div>
+            <span class="dot"></span>
+            <span class="year">2021-Present</span>
+            <div class="container">
+                <span style="font-size: 35px;"><strong>Undergraduate Degree</strong></span><br>
+                <span style="font-size: 30px;">Thammasat University</span><br>
+                <span style="font-size: 30px;">Bachelor of Engineering (Digital Engineering)</span>
+                <span style="font-size: 30px;">Pathum Thani, Thailand</span>
+            </div>
+        </div>
+    </article>
+    <article id="skill">
+        <h1><strong>Skill</strong></h1>
+        <div class="parent">
+            <div id="technical-skill">
+                <h2>Technical Skill</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java Script</li>
+                    <li>React.js</li>
                 </ul>
-              </div>
             </div>
-          </div>
-    </section>
-    <section id="skill" style="padding: 20px;">
-        <h1 style="text-align: center; margin-bottom: 20px;"><strong>Skill</strong></h1>
-        <div class="skill-container">
-            <div class="card">
-                <span>Language</span>
-                <span>Thai: Native</span>
-                <span>English: Intermediate</span>
-            </div>
-            <div class="card">
-                <span style="font-weight: 100;">Computer</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>React.js</span>
+            <div id="soft-skill">
+                <h2>Soft Skill</h2>
             </div>
         </div>
-    </section>
-    <section id="project">
-        <h1><strong>Project</strong></h1>
-    </section>
-    <section id="experience">
+    </article>
+    <article id="experience">
         <h1><strong>Experience</strong></h1>
-    </section>
+    </article>
 </main>
+
+
+
 </html>
