@@ -9,10 +9,9 @@ body {
     margin-right: auto;
 }
 
-article {
+section {
     width: 100%;
-    height: fit-content;
-    padding: 50px;
+    padding: 40px;
 }
 
 .font {
@@ -34,7 +33,10 @@ nav img {
 }
 
 nav h2 {
-    text-align: center; color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    font-size: 40px;
 }
 
 .btn-group button {
@@ -69,10 +71,6 @@ button a {
 a:-webkit-any-link {
     text-decoration: none;
     color: rgb(0, 74, 127);
-}
-
-a:active {
-    color: #6096B4;
 }
 
 main {
@@ -143,22 +141,23 @@ main {
     background-color: white;
 }
 
-#education {
-    background-color: #e2ecf1;
-}
-
 #skill {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+    height: fit-content;
 }
 
 #experience {
     background-color: #e2ecf1;
 }
 
-article h1 {
+#extra {
+    background-color: #e2ecf1;
+}
+
+section h1 {
     font-family: 'Raleway', sans-serif;
     color: black;
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 2px;
     margin: 0px;
     padding-left: 50px;
@@ -254,10 +253,9 @@ li {
     letter-spacing: 3px;
 }
 
-#technical-skill, #soft-skill {
+#technical-skill,
+#soft-skill {
     margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 30px;
 }
 
 #technical-skill h2 {
@@ -268,6 +266,20 @@ li {
     font-size: 35px;
 }
 
-#technical-skill li, #soft-skill li {
+#technical-skill li,
+#soft-skill li {
     font-size: 30px;
+}
+
+section.skill {
+    padding-bottom: 0 !important;
+}
+
+div.extra {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.extra ul {
+    list-style-type: '-  ';
 }
