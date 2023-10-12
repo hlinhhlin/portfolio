@@ -90,6 +90,7 @@ main {
     font-family: 'Raleway', sans-serif;
     color: white;
     letter-spacing: 4px;
+    font-size: 50px;
 }
 
 .typewriter {
@@ -156,7 +157,7 @@ main {
 section h1 {
     font-family: 'Raleway', sans-serif;
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2px;
     margin: 0px;
     padding-left: 50px;
@@ -166,6 +167,7 @@ section h1 {
 #about img {
     margin: 20px;
     border-radius: 15px;
+    height: 300px;
 }
 
 .parent {
@@ -176,7 +178,7 @@ section h1 {
 }
 
 .parent ul {
-    list-style-type: none;
+    list-style-type: '-  ';
     line-height: 2;
     padding: 0px;
 }
@@ -259,16 +261,16 @@ li {
 }
 
 #technical-skill h2 {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 #soft-skill h2 {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 #technical-skill li,
 #soft-skill li {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 section.skill {
@@ -276,7 +278,7 @@ section.skill {
 }
 
 div.extra {
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 100px;
 }
 
@@ -294,16 +296,22 @@ div.certificate {
     text-align: center;
 }
 
-@media (max-width: 360px) {
+#data img, #bangkok img {
+    height: 300px;
+}
+
+@media (max-width: 420px) {
     nav {
         width: 100%;
-        padding: 1em;
         position: static;
         height: fit-content;
+        padding-left: 0;
+        padding-right: 0;
     }
     
     nav img {
         width: 50%;
+
     }
     
     nav h2 {
@@ -315,6 +323,7 @@ div.certificate {
         height:53px;
         padding: 0;
         /* set button center */
+        margin-left: 25%;
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -324,154 +333,106 @@ div.certificate {
     }
 
     main {
-        background-color: #EEE9DA;
-        overflow-y: auto;
-        margin-left: 30vh;
-        overflow-x: hidden;
+        width: 100%;
+        margin-left: 0;
     }
-    
-    .welcome {
-        background-color: #93BFCF;
-    
+
+    section.welcome {
+        padding-left: 20px;
+        
     }
     
     .welcome h1 {
-        font-family: 'Raleway', sans-serif;
-        color: white;
-        letter-spacing: 4px;
+        font-size: 18px;
+        padding-left: 0;
     }
     
     .typewriter {
         width: fit-content;
     }
-    
-    .typewriter h1 {
-        overflow: hidden;
-        /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid orange;
-        /* The typwriter cursor */
-        white-space: nowrap;
-        /* Keeps the content on a single line */
-        margin: 0 auto;
-        /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em;
-        /* Adjust as needed */
-        width: fit-content;
-        animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite;
-    }
 
     section h1 {
-        font-family: 'Raleway', sans-serif;
-        color: black;
-        font-size: 40px;
-        letter-spacing: 2px;
-        margin: 0px;
-        padding-left: 50px;
-        padding-bottom: 30px;
+        font-size: 30px;
+        padding-bottom: 0;
     }
     
+    section {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+
     #about img {
-        margin: 20px;
+        width: 50%;
         border-radius: 15px;
+        height: auto;
+
     }
     
     .parent {
-        width: 100%;
-        display: flex;
-        font-size: 30px;
-    }
-    
-    .parent ul {
-        list-style-type: none;
-        line-height: 2;
-        padding: 0px;
+        flex-direction: column;
+        font-size: 20px;
     }
     
     .parent div {
-        padding: 20px;
-        min-width: 400px;
+        padding: 0;
+        height: fit-content;
     }
-    
-    li {
-        margin: 30px 0;
+
+    li.no-gap-buttom {
+        margin-bottom: 0;
     }
-    
-    /* The actual timeline (the vertical ruler) */
-    .timeline {
-        position: relative;
-        margin: 0 auto;
+
+    li.no-gap-top {
+        margin-top: 0;
     }
     
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
-        content: '';
-        position: absolute;
-        width: 5px;
-        background-color: black;
-        top: 0;
-        bottom: 0;
-        left: 140px;
-        margin-left: -3px;
+        width: 3px;
+        left: 20px;
     }
     
     .container {
-        background-color: white;
-        line-height: 40px;
-        width: 40%;
+        width: 60%;
         min-height: 100px;
         padding: 30px;
-        margin-left: 450px;
+        margin-left: 50px;
         margin-bottom: 40px;
-        border-radius: 30px;
-        border: solid;
-        border-width: 3px;
-        border-color: #2175a6;
     }
     
     .dot {
-        height: 25px;
-        width: 25px;
-        background-color: #e04f4f;
-        border: solid;
-        border-radius: 50%;
-        display: inline-block;
-        margin-left: 125px;
-        position: absolute;
-        margin-top: 70px;
-        opacity: 100%;
-        z-index: 1;
+        height: 15px;
+        width: 15px;
+        margin-left: 8px;
     }
     
     .year {
-        font-size: 25px;
-        padding: 15px;
-        display: block;
-        width: 200px;
-        position: absolute;
-        color: #FFFFFF;
-        background: #03405c;
-        border-radius: 20px;
-        margin-left: 180px;
-        margin-top: 55px;
-        font-family: 'Raleway', sans-serif;
-        opacity: 70%;
-        text-align: center;
-        letter-spacing: 3px;
+        font-size: 15px;
+        width: 150px;
+        position: sticky;
+        margin-left: 100px;
+        margin-bottom: 10px;
     }
     
     #technical-skill,
     #soft-skill {
-        margin-left: 100px;
+        margin-left: 20px;
     }
     
+    div#technical-skill {
+        margin-left: 0;
+    }
+
+    div#soft-skill {
+        margin-left: 0;
+    }
+
     #technical-skill h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
     
     #soft-skill h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
     
     #technical-skill li,
@@ -479,26 +440,30 @@ div.certificate {
         font-size: 20px;
     }
     
-    section.skill {
-        padding-bottom: 0 !important;
-    }
-    
     div.extra {
         font-size: 20px;
-        margin-left: 100px;
+        margin-left: 0px;
     }
-    
-    .extra ul {
-        list-style-type: '-  ';
+
+    #extra ul {
+        padding-right: 20px;
     }
     
     div.certificate {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     
     #data, #bangkok {
-        width: 50%;
+        width: 100%;
         text-align: center;
+    }
+
+    #data img, #bangkok img {
+        height: 200px;
+    }
+
+    #certificate h1 {
+        margin-bottom: 30px;
     }
 }
