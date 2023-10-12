@@ -283,3 +283,13 @@ div.extra {
 .extra ul {
     list-style-type: '-  ';
 }
+
+div.certificate {
+    display: flex;
+    flex-direction: row;
+}
+
+#data, #bangkok {
+    width: 50%;
+    text-align: center;
+}
