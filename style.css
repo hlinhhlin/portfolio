@@ -146,11 +146,7 @@ main {
     background-color: #ffffff;
 }
 
-#experience {
-    background-color: #e2ecf1;
-}
-
-#extra {
+#experience, #extra {
     background-color: #e2ecf1;
 }
 
@@ -260,11 +256,7 @@ li {
     margin-left: 100px;
 }
 
-#technical-skill h2 {
-    font-size: 25px;
-}
-
-#soft-skill h2 {
+#technical-skill h2, #soft-skill h2 {
     font-size: 25px;
 }
 
