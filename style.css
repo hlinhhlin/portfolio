@@ -311,7 +311,6 @@ div.certificate {
     
     nav img {
         width: 50%;
-
     }
     
     nav h2 {
@@ -363,6 +362,7 @@ div.certificate {
 
     #about img {
         width: 50%;
+        margin-left: 15%;
         border-radius: 15px;
         height: auto;
 
