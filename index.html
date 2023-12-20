@@ -22,67 +22,70 @@
     <script src="script.js"></script>
   </head>
   <nav
-    class="navbar navbar-expand-lg rounded-pill mt-4 mx-auto font-light fixed-top"
+    class="navbar navbar-expand-lg rounded-pill mt-4 mx-auto font-blue fixed-top"
   >
     <div class="container-fluid">
-      <p class="fs-3 ms-5 py-0 fw-bold">Sirapat E.</p>
-      <ul class="navbar-nav fs-5 fw-bold">
+      <ul class="navbar-nav fs-5 fw-bold ms-5">
         <li class="nav-item">
-          <a class="nav-link font-light" href="#about">About</a>
+          <a class="nav-link font-blue" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-light" href="#experince">Experience</a>
+          <a class="nav-link font-blue" href="#experience">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-light" href="#education">Education</a>
+          <a class="nav-link font-blue" href="#education">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-light" href="#skill">Skills</a>
+          <a class="nav-link font-blue" href="#skill">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-light" href="#extra"
+            <a class="nav-link font-blue" href="#project">Projects</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link font-blue" href="#extracurricular"
             >Extracurricular Activity</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link font-light" href="#certi">Certification</a>
+          <a class="nav-link font-blue" href="#certi">Certification</a>
         </li>
       </ul>
       <button
         id="downloadButton"
         type="button"
-        class="me-4 py-0 fs-5 fw-bold p-4 btn btn-light"
+        class="me-4 py-0 fs-5 fw-bold p-4 btn"
       >
         Resume
       </button>
     </div>
   </nav>
-  <!-- done -->
   <main>
     <section id="welcome" class="p-5">
       <div id="title">
         <div>
-          <p id="name" class="fw-bold font-light">
+          <p id="name" class="fw-bold font-dark">
             Sirapat <br />Eiamassavamongkol
           </p>
-          <hr class="hr font-light" />
-          <p id="occupation" class="font-light">Digital Engineering Student</p>
+          <hr class="hr font-dark border-3" />
+          <p id="occupation" class="font-dark">Digital Engineering Student</p>
         </div>
       </div>
       <div id="image" class="mt-auto">
-        <img src="/src/profile_cut.png" class="img-fluid" alt="Profile Image" />
+        <img src="/src/profile_new.png" class="img-fluid" alt="Profile Image" />
       </div>
     </section>
     <section id="about" class="p-5">
-      <p id="about-me" class="fw-bolder font-light mx-auto mb-3">About Me</p>
+      <p id="about-me" class="fw-bolder font-blue mx-auto mb-3">
+        About <u>Me</u>
+      </p>
       <div id="about-detail">
-        <p class="fw-medium fs-5 p-5 font-light" id="about-text">
+        <p class="fw-medium fs-5 p-5 font-blue" id="about-text">
           I'm a passionate digital engineering student with a love for
           problem-solving and innovation. <br />
           Aspiring to contribute to cutting-edge technology solutions. <br />
           Skilled in hardware and software, and always eager to learn and grow.
         </p>
-        <div id="about-info" class="fs-5 p-5 font-light">
+        <div id="about-info" class="fs-5 p-5 font-blue">
           <ul>
             <li>
               <span class="material-symbols-outlined"> book </span>
@@ -101,23 +104,21 @@
               <span class="ms-2">hlinhhlin@gmail.com</span>
             </li>
             <li>
-              <img src="/src/linkedin.png">
-                <a href="https://www.linkedin.com/in/sirapat-eiamassavamongkol/"
+              <img src="/src/linkedin.png" />
+              <a href="https://www.linkedin.com/in/sirapat-eiamassavamongkol/"
                 ><span>linkedin.com</span></a
               >
             </li>
             <li>
-                <img src="/src/github.png">
-                <a href="https://github.com/hlinhhlin"
-                ><span>github.com</span></a
-              >
+              <img src="/src/github.png" />
+              <a href="https://github.com/hlinhhlin"><span>github.com</span></a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section>
-        <h1><strong>Experience</strong></h1>
+    <!-- <section >
+        
         <div class="timeline">
             <span class="dot"></span>
             <span class="year">December 2022</span>
@@ -134,88 +135,367 @@
                 <span style="font-size: 20px;">Front-End Developer Intern</span><br>
             </div>
         </div>
-    </section>
-    <!-- <section>
-        <h1><strong>Education</strong></h1>
-        <div class="timeline">
-            <span class="dot"></span>
-            <span class="year">2015-2017</span>
-            <div class="container">
-                <span style="font-size: 25px;"><strong>Mathayom 1 - Mathayom 3</strong></span><br>
-                <span style="font-size: 20px;">Triam Udom Suksa Pattanakarn School</span><br>
-                <span style="font-size: 20px;">Bangkok, Thailand</span>
-            </div>
-            <span class="dot"></span>
-            <span class="year">2018-2020</span>
-            <div class="container">
-                <span style="font-size: 25px;"><strong>Mathayom 4 - Mathayom 6</strong></span><br>
-                <span style="font-size: 20px;">Triam Udom Suksa School</span><br>
-                <span style="font-size: 20px;">Bangkok, Thailand</span>
-            </div>
-            <span class="dot"></span>
-            <span class="year">2021-Present</span>
-            <div class="container">
-                <span style="font-size: 25px;"><strong>Undergraduate Degree</strong></span><br>
-                <span style="font-size: 20px;">Thammasat University</span><br>
-                <span style="font-size: 20px;">Bachelor of Engineering (Digital Engineering)</span>
-                <span style="font-size: 20px;">Pathum Thani, Thailand</span>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h1><strong>Skill</strong></h1>
-        <div>
-            <div>
-                <h2>Technical Skill</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Java Script</li>
-                    <li>React.js</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Soft Skill</h2>
-                <ul>
-                    <li>Leadership</li>
-                    <li>Communication</li>
-                    <li>Problem Solving</li>
-                    <li>Time Management</li>
-                    <li>Interpersonal Skills</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h1><strong>Extracurricular Activity</strong></h1>
-        <div>
-            <ul>
-                <li>President, Digital Engineering Class of 2021</li>
-                <li>Vice President, SIIT of Thammasat Freshy Game 2021</li>
-                <li>Master of Ceremonies (MC), SIIT</li>
-                <li>MC for 4 SIIT events</li>
-                <li>Subcommittee Member, Foreign Department, Thammasat University Student Union 2021</li>
-                <li>Nanny for 2 SIIT events</li>
-                <li>Exchange Student Buddy for 2 Semesters</li>
-                <li>Organized an Event for SIIT 1 event</li>
-                <li>Member, SIIT Innovation Club</li>
-            </ul>
-        </div>
-    </section>
-    <section>
-        <h1><strong>Certification</strong></h1>
-        <div>
-            <div>
-                <img src="src/cerdata.jpg">
-                <p>Intermediate Python, Data Camp, 2022</p>
-            </div>
-            <div>
-                <img src="src/42bangkok.png">
-                <p>Discover Piscine for University Students, 42 Bangkok, 2022</p>
-            </div>
-        </div>
     </section> -->
+    <!-- Section: Timeline -->
+    <section id="experience" class="py-3">
+      <h1 class="font-blue mb-3 font-dark topic">
+        <strong>Experience</strong>
+      </h1>
+      <div class="container my-2">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <ul id="timeline-experience" class="timeline">
+              <li>
+                <span class="fw-bold fs-5 font-dark"
+                  >Fullstack Developer Intern</span
+                >
+                <span class="float-end font-dark">June 2023 - July 2023</span>
+                </br>
+                <span class="fw-bold fs-6 font-dark">500 miles Co., Ltd</span>
+                <ul class="mt-3 fs-6" id="description-list">
+                  <li class="font-dark">
+                    Designed and implemented RESTful APIs using FastAPI to
+                    facilitate communication between the front-end and back-end
+                    systems.
+                  </li>
+                  <li class="font-dark">
+                    Developed dynamic and responsive user interfaces using
+                    React.js, ensuring seamless user experiences across multiple
+                    devices.
+                  </li>
+                  <li class="font-dark">
+                    Integrated Google Maps API to create interactive and
+                    location-based features within the application's front-end.
+                  </li>
+                  <li class="font-dark">
+                    Utilized MongoDB to store and manage data, implementing
+                    efficient data models and queries to optimize performance.
+                  </li>
+                  <li class="font-dark">
+                    Conducted comprehensive testing of both front-end and
+                    back-end components to identify and resolve issues promptly.
+                  </li>
+                  <li class="font-dark">
+                    Collaborated with cross-functional teams to align front-end
+                    and back-end development efforts, using Git for version
+                    control and collaboration.
+                  </li>
+                </ul>
+                <div class="mt-3 mb-5" style="font-size: 15px">
+                  <span class="skill-list" style="background-color: #af3f72"
+                    >React.js</span
+                  >
+                  <span class="skill-list" style="background-color: #3f72af"
+                    >Material-UI</span
+                  >
+                  <span class="skill-list" style="background-color: #3faf7c"
+                    >MongoDB</span
+                  >
+                  <span class="skill-list" style="background-color: #af7c3f"
+                    >FastAPI</span
+                  >
+                  <span class="skill-list" style="background-color: #af3f72"
+                    >Github</span
+                  >
+                  <span class="skill-list" style="background-color: #3f72af"
+                    >Google Map API</span
+                  >
+                </div>
+              </li>
+              <li>
+                <span class="fw-bold fs-5 font-dark"
+                  >Front-End Developer Intern</span>
+                <span class="float-end font-dark">December 2022</span>
+                </br>
+                <span class="fw-bold fs-6 font-dark">500 miles Co., Ltd</span>
+                <ul class="mt-3 fs-6">
+                  <li class="font-dark">
+                    Led the development of responsive and user-friendly
+                    interfaces using cutting-edge technologies like React.js,
+                    ensuring optimal performance across various devices and
+                    browsers.
+                  </li>
+                  <li class="font-dark">
+                    Collaborated with UX/UI designers to implement designs and
+                    enhance user experiences while maintaining design
+                    consistency and standards.
+                  </li>
+                </ul>
+                <div class="mt-3 mb-0" style="font-size: 15px">
+                  <span class="skill-list" style="background-color: #af3f72"
+                    >React.js</span
+                  >
+                  <span class="skill-list" style="background-color: #3f72af"
+                    >Material-UI</span
+                  >
+                  <span class="skill-list" style="background-color: #3faf7c"
+                    >Github</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="py-3">
+        <h1 class="font-blue mb-3 font-blue topic">
+            <strong>Education</strong>
+          </h1>  
+          <div class="container my-2">
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <ul id="timeline-education" class="timeline">
+                    <li>
+                        <span class="fw-bold fs-5 font-blue"
+                          >Undergraduate Degree</span>
+                        <span class="float-end font-blue">2021-Present</span>
+                        </br>
+                        <span class="fw-bold fs-6 font-blue">Sirindhorn International Institute of Technology, <br>Thammasat University, Pathum Thani</span> <br>
+                        <span class="fs-6 font-blue">Bachelor of Engineering (Digital Engineering)</span> <br>
+                        <span class="fs-6 font-blue">Expected Graduation: June, 2025</span> <br>
+                        <span class="fs-6 font-blue">GPA: 3.72</span>
+                      </li>
+                    <li>
+                    <li>
+                        <span class="fw-bold fs-5 font-blue"
+                          >Mathayom 4-6</span>
+                        <span class="float-end font-blue">2018-2020</span>
+                        </br>
+                        <span class="fw-bold fs-6 font-blue">Triam Udom Suksa School, Bangkok</span> <br>
+                        <span class="fs-6 font-blue">English-Mathematics</span>
+                      </li>
+                    <li>
+                    <span class="fw-bold fs-5 font-blue"
+                      >Mathayom 1-3</span
+                    >
+                    <span class="float-end font-blue">2015-2017</span>
+                    </br>
+                    <span class="fw-bold fs-6 font-blue">Triam Udom Suksa Pattanakarn School, Bangkok</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>      
+    </section>
+    <section id="skill">
+        <h1 class="font-blue mb-3 font-dark topic">
+            <strong>Skill</strong>
+          </h1>  
+        <div id="skill-container" class="container">
+            <div class="row">
+                <div class="col-md-5 skill-type">
+                    <h3 class="skill-topic font-dark fw-bold mt-3">Technical Skill</h3>
+                    <div class="mt-4 mb-5" style="font-size: 15px; text-align: center;">
+                        <span class="skill-list" style="background-color: #af3f72"
+                          >HTML</span
+                        >
+                        <span class="skill-list" style="background-color: #3f72af"
+                          >CSS</span
+                        >
+                        <span class="skill-list" style="background-color: #3faf7c"
+                          >Java Script</span
+                        >
+                        <span class="skill-list" style="background-color: #af7c3f"
+                          >Python</span
+                        >
+                        <span class="skill-list" style="background-color: #af3f72"
+                          >React.JS</span
+                        > 
+                        <span class="skill-list" style="background-color: #3f72af"
+                          >MySQL</span
+                        ><br><br>
+                        <span class="skill-list" style="background-color: #3faf7c"
+                          >FastAPI</span
+                        > 
+                        <span class="skill-list" style="background-color: #af7c3f"
+                          >REST API</span
+                        >
+                        <span class="skill-list" style="background-color: #af3f72"
+                          >Material-UI</span
+                        >
+                        <span class="skill-list" style="background-color: #3f72af"
+                          >Node.js</span
+                        >
+                        <span class="skill-list" style="background-color: #3faf7c"
+                          >Express.JS</span
+                        ><br><br>
+                        <span class="skill-list" style="background-color: #af7c3f"
+                          >Figma</span
+                        >
+                        <span class="skill-list" style="background-color: #af3f72"
+                          >Postman</span
+                        > 
+                        <span class="skill-list" style="background-color: #3f72af"
+                          >Github</span
+                        >
+                      </div>
+                </div>
+                <div class="col-md-5 skill-type offset-md-2">
+                    <h3 class="skill-topic font-dark fw-bold mt-3">Soft Skill</h3>
+                    <div class="mt-5 mb-5" style="font-size: 15px; text-align: center;">
+                        <span class="skill-list" style="background-color: #af3f72"
+                          >Leadership</span
+                        >
+                        <span class="skill-list" style="background-color: #3f72af"
+                          >Problem-solving</span
+                        >
+                        <span class="skill-list" style="background-color: #3faf7c"
+                          >Teamwork</span
+                        >
+                        <span class="skill-list" style="background-color: #af7c3f"
+                          >Communication</span
+                        ><br><br>
+                        <span class="skill-list" style="background-color: #af3f72"
+                          >Interpersonal Skill</span
+                        > 
+                        <span class="skill-list" style="background-color: #3f72af"
+                          >Adaptability</span
+                        >
+                        <span class="skill-list" style="background-color: #3faf7c"
+                          >Time Management</span
+                        > <br><br>
+                        <span class="skill-list" style="background-color: #af7c3f"
+                          >Critical Thinking</span
+                        >
+                      </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        
+    </section>
+
+    <section id="extracurricular" class="py-3">
+        <h1 class="font-blue mb-3 font-blue topic">
+            <strong>Extracurricular Activity</strong>
+        </h1>
+        <div id="activity" class="mb-5">
+            <div id="activity-list" class="font-blue fs-6">
+                <ul>
+                    <li>President, Digital Engineering Class of 2021</li>
+                    <li>Vice President, SIIT of Thammasat Freshy Game 2021</li>
+                    <li>Master of Ceremonies (MC), SIIT</li>
+                    <li>MC for 4 SIIT events</li>
+                    <li>Subcommittee Member, Foreign Department, Thammasat University Student Union 2021</li>
+                    <li>Nanny for 2 SIIT events</li>
+                    <li>Exchange Student Buddy for 2 Semesters</li>
+                    <li>Organized an Event for SIIT 1 event</li>
+                    <li>Member, SIIT Innovation Club</li>
+                </ul>
+            </div>
+            <div id="carouselPhoto" class="carousel slide" data-bs-ride="carousel" >
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="0" class="active" aria-current="true" aria-label="1"></button>
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="1" aria-label="2"></button>
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="2" aria-label="3"></button>
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="3" aria-label="4"></button>
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="4" aria-label="5"></button>
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="5" aria-label="6"></button>
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="6" aria-label="7"></button>
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="7" aria-label="8"></button>
+                  <button type="button" data-bs-target="#carouselPhoto" data-bs-slide-to="8" aria-label="9"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/src/1.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>SIIT Insight Camp 2022</h5>
+                      <p>A Nanny taking care of the participants.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>SIIT First Meet 2021</h5>
+                      <p>A participant in the First Meet Event for new students.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>SIIT First Meet 2022</h5>
+                      <p>Rehearsal day</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Dek-D's TCAS Fair, 22th Oct 2022</h5>
+                      <p>A representative tasked with presenting the institute.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Dek-D's TCAS Fair, 22th Oct 2022</h5>
+                      <p>A representative tasked with presenting the institute.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/6.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>SIIT Bann's Day 2022</h5>
+                      <p>A Master of Ceremonies (MC) facilitate its smooth running and to ensure the outcome the organisers planned is achieved.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/7.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>SIIT Orientation Day 2023</h5>
+                      <p>A Master of Ceremonies (MC) facilitate its smooth running and to ensure the outcome the organisers planned is achieved.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/8.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>SIIT Insight Camp 2023</h5>
+                      <p>Activity section responsible for organizing and designing event activities.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/9.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>SIIT International Night 2023</h5>
+                      <p>The registration section manages event registrations.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhoto" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPhoto" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+
+    <section id="certification" class="py-3">
+        <h1 class="font-blue mb-5 font-dark topic"><strong>Certification</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div style="text-align: center;">
+                        <img src="src/cerdata.jpg" class="image-fluid">
+                        <p class="m-3 fs-6 font-dark fw-semibold">Intermediate Python, Data Camp, 2022</p>
+                    </div>
+                </div>
+                <div class="col"> 
+                    <div style="text-align: center;">
+                        <img src="src/42bangkok.png" class="image-fluid">
+                        <p class="m-3 fs-6 font-dark fw-semibold">Discover Piscine for University Students, 42 Bangkok, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

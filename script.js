@@ -23,14 +23,43 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-    const aboutSection = document.getElementById('about');
+    const aboutInfoElement = document.getElementById('about-info');
+    const aboutTextElement = document.getElementById('about-text');
+    const timelineExElement = document.getElementById('timeline-experience');
+    const timelineEdElement = document.getElementById('timeline-education');
+    const skillContainer = document.getElementById('skill-container');
 
-    if (isInViewport(aboutSection)) {
-        aboutSection.classList.add('show');
-        // Remove event listener once the section is visible
-        window.removeEventListener('scroll', handleScroll);
+    const isInfoInView = isInViewport(aboutInfoElement);
+    const isTextInView = isInViewport(aboutTextElement);
+    const isTimelineExInView = isInViewport(timelineExElement);
+    const isTimelineEdInView = isInViewport(timelineEdElement);
+    const isSkillInView = isInViewport(skillContainer);
+
+    if (isInfoInView) {
+        aboutInfoElement.classList.add('show');
     }
+    if (isTextInView) {
+        aboutTextElement.classList.add('show');
+    }
+    if (isTimelineExInView) {
+        timelineExElement.classList.add('show');
+    }
+    if (isTimelineEdInView) {
+        timelineEdElement.classList.add('show');
+    }    
+    if (isSkillInView) {
+        skillContainer.classList.add('show');
+    }
+    
+    // // Check if both elements are visible and remove listener accordingly
+    // if (isInfoInView && isTextInView) {
+    //     window.removeEventListener('scroll', handleScroll);
+    // } else {
+    //     window.addEventListener('scroll', handleScroll);
+    // }
 }
+
+
 
 // Listen for scroll events
 window.addEventListener('scroll', handleScroll);

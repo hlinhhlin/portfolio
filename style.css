@@ -7,15 +7,19 @@ body {
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color: #dbe2ef;
 }
 
-.font-pink {
-  color: #ffe2e2;
+.font-blue {
+  color: #3f72af;
 }
 
 .font-dark {
-  color: #5e5d71;
+  color: #112d4e;
+}
+
+.font-light-dark {
+  color: #3f5875;
 }
 
 .font-light {
@@ -23,7 +27,7 @@ body {
 }
 
 nav {
-  background: #8785a2;
+  background: #f9f7f7;
   min-height: 60px;
   max-width: 1300px;
 }
@@ -39,18 +43,17 @@ p {
 
 .btn {
   border-radius: 40px; /* Adjust the value as needed */
-  background-color: #fff0f0;
-  color: #5e5d71;
+  color: #3f72af; /* Change the color to your desired color */
+  border-color: #3f72af; /* Same color as the background */
 }
 
 .btn:hover {
   color: white; /* Change the color to your desired color */
-  background-color: #5e5d71; /* Light yellow as an example */
-  border-color: #5e5d71; /* Same color as the background */
+  background-color: #3f72af; /* Light yellow as an example */
+  border-color: #3f72af; /* Same color as the background */
 }
 
 #welcome {
-  background: linear-gradient(#8785a2, #9a99a4);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -84,13 +87,10 @@ p {
 }
 
 #image img {
-  max-height: 530px;
+  max-height: 830px;
 }
 
 #about {
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* Apply transition effect */
-  background: linear-gradient(#9a99a4, #d8d7e1);
   height: 80vh;
 }
 #about.show {
@@ -98,7 +98,7 @@ p {
 }
 
 #about-me {
-  font-size: 70px;
+  font-size: 50px;
   width: fit-content;
   font-family: "Nunito", serif;
 }
@@ -109,26 +109,35 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
-#about-detail img{
-    width: 30px;
+#about-detail img {
+  width: 30px;
 }
 
 /* Styling for the about text */
 #about-text {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Apply transition effect */
   max-width: 500px;
   text-align: left;
   margin-bottom: 20px;
-  border: 2px solid #e7e7e7; /* Adjust the width, style, and color as needed */
+  border: 2px solid #3f72af; /* Adjust the width, style, and color as needed */
   border-radius: 30px;
 }
 
 #about-info {
-  border: 2px solid #e7e7e7; /* Adjust the width, style, and color as needed */
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Apply transition effect */
+  border: 2px solid #3f72af; /* Adjust the width, style, and color as needed */
   border-radius: 30px;
 }
 
-a {
-    color: #fff0f0;
+#about-info.show,
+#about-text.show {
+  opacity: 1;
+}
+
+#about a {
+  color: #3f72af;
 }
 
 /* Styling for the list of details */
@@ -147,6 +156,147 @@ a {
   margin-right: 5px;
 }
 
-ul {
+#about ul {
   list-style-type: none;
+}
+
+#experience {
+  height: fit-content;
+  padding: 50px 0;
+}
+
+.topic {
+  text-align: center;
+  font-size: 50px;
+}
+
+.skill-list {
+  border-radius: 20px;
+  color: #fff0f0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#description-list li {
+  margin-bottom: 5px;
+}
+
+#experience-timeline {
+  width: 100%;
+}
+
+#timeline-experience {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+#timeline-experience.show{
+  opacity: 1;
+}
+
+/* timeline */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #3F72AF;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+#education {
+  height: fit-content;
+  padding: 50px 0;
+}
+
+#timeline-education {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+#timeline-education.show{
+  opacity: 1;
+}
+
+.skill-topic {
+  text-align: center;
+}
+
+.skill-type {
+  border: 2px solid #3F72AF;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#skill {
+  height: fit-content;
+  padding: 50px 0;
+}
+
+#skill-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+#skill-container.show{
+  opacity: 1;
+}
+
+#extracurricular {
+  height: fit-content;
+  padding: 50px 0;
+}
+
+#activity {
+  display: flex;
+  margin-top: 50px;
+}
+
+#activity-list {
+  width: fit-content;
+  margin-left: 150px;
+  margin-right: 100px;
+
+}
+
+#activity-list ul {
+  list-style-type: circle;
+}
+
+#activity-list ul li{
+margin-bottom: 7px;
+}
+
+#carouselPhoto {
+  width: 30%;
+}
+
+#certification img{
+  height: 300px;
+}
+
+#certification {
+  height: fit-content;
+  padding: 50px 0;
 }
