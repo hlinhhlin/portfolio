@@ -3,7 +3,7 @@ function popUpElement() {
     var titleElement = document.getElementById('title');
     var imageElement = document.getElementById('image');
     titleElement.style.opacity = '1'; // Change opacity to make the title visible
-    imageElement.style.opacity = '1'; // Change opacity to make the title visible
+    imageElement.style.opacity = '1'; 
 
 }
 
@@ -65,43 +65,8 @@ function handleScroll() {
     if (isActivityInView) {
         activityContainer.classList.add('show');
     }
-    
-    
-    // // Check if both elements are visible and remove listener accordingly
-    // if (isInfoInView && isTextInView) {
-    //     window.removeEventListener('scroll', handleScroll);
-    // } else {
-    //     window.addEventListener('scroll', handleScroll);
-    // }
 }
 
-
-
-// Listen for scroll events
 window.addEventListener('scroll', handleScroll);
 
-// Initial check when the page loads
 document.addEventListener('DOMContentLoaded', handleScroll);
-
-
-// document.getElementById('downloadButton').addEventListener('click', function() {
-//     // Path to the file you want to download
-//     var fileUrl = '/src/resume.pdf'; // Replace this with the actual file URL
-    
-//     // Create an anchor element
-//     var a = document.createElement('a');
-//     a.href = fileUrl;
-    
-//     // Set the file name for download
-//     a.download = '/src/resume.pdf'; // Replace 'your_file_name.pdf' with the desired file name
-    
-//     // Append the anchor to the body
-//     document.body.appendChild(a);
-    
-//     // Trigger a click on the anchor to initiate download
-//     a.click();
-    
-//     // Clean up: remove the anchor from the body
-//     document.body.removeChild(a);
-//   });
-  
