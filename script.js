@@ -28,12 +28,18 @@ function handleScroll() {
     const timelineExElement = document.getElementById('timeline-experience');
     const timelineEdElement = document.getElementById('timeline-education');
     const skillContainer = document.getElementById('skill-container');
+    const projectContainer = document.getElementById('project-container');
+    const cerContainer = document.getElementById('cer-container');
+    const activityContainer = document.getElementById('activity-container');
 
     const isInfoInView = isInViewport(aboutInfoElement);
     const isTextInView = isInViewport(aboutTextElement);
     const isTimelineExInView = isInViewport(timelineExElement);
     const isTimelineEdInView = isInViewport(timelineEdElement);
     const isSkillInView = isInViewport(skillContainer);
+    const isProjectInView = isInViewport(projectContainer);
+    const isCerInView = isInViewport(cerContainer);
+    const isActivityInView = isInViewport(activityContainer);
 
     if (isInfoInView) {
         aboutInfoElement.classList.add('show');
@@ -47,9 +53,19 @@ function handleScroll() {
     if (isTimelineEdInView) {
         timelineEdElement.classList.add('show');
     }    
+    if (isProjectInView) {
+        projectContainer.classList.add('show');
+    }
+    if (isCerInView) {
+        cerContainer.classList.add('show');
+    }
     if (isSkillInView) {
         skillContainer.classList.add('show');
     }
+    if (isActivityInView) {
+        activityContainer.classList.add('show');
+    }
+    
     
     // // Check if both elements are visible and remove listener accordingly
     // if (isInfoInView && isTextInView) {

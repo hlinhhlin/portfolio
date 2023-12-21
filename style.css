@@ -117,10 +117,11 @@ p {
 #about-text {
   opacity: 0;
   transition: opacity 1s ease-in-out; /* Apply transition effect */
+  background-color: #6595cf;
+  color: white;
   max-width: 500px;
   text-align: left;
   margin-bottom: 20px;
-  border: 2px solid #3f72af; /* Adjust the width, style, and color as needed */
   border-radius: 30px;
 }
 
@@ -165,6 +166,19 @@ p {
   padding: 50px 0;
 }
 
+.ex-background {
+  background-image: url('/src/back-ex.png');
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+.edu-background {
+  background-image: url('/src/back-edu.png');
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
 .topic {
   text-align: center;
   font-size: 50px;
@@ -268,9 +282,14 @@ ul.timeline > li:before {
   padding: 50px 0;
 }
 
-#activity {
+#activity-container {
   display: flex;
   margin-top: 50px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+#activity-container.show {
+  opacity: 1;
 }
 
 #activity-list {
@@ -300,3 +319,20 @@ margin-bottom: 7px;
   height: fit-content;
   padding: 50px 0;
 }
+
+#cer-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+#cer-container.show{
+  opacity: 1;
+}
+
+#project-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+#project-container.show{
+  opacity: 1;
+}
+
