@@ -93,24 +93,12 @@ p {
 #about {
   height: 80vh;
 }
-#about.show {
-  opacity: 1;
-}
-
-#about-me {
-  font-size: 50px;
-  width: fit-content;
-  font-family: "Nunito", serif;
-}
 
 #about-detail {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-}
-#about-detail img {
-  width: 30px;
 }
 
 /* Styling for the about text */
@@ -139,6 +127,7 @@ p {
 
 #about a {
   color: #3f72af;
+  margin-left: 8px;
 }
 
 /* Styling for the list of details */
@@ -155,6 +144,10 @@ p {
 /* Styling for strong elements within list items */
 #about-info li strong {
   margin-right: 5px;
+}
+
+#about-detail img {
+  width: 30px;
 }
 
 #about ul {
@@ -179,6 +172,7 @@ p {
   background-position: fixed;
   background-repeat: no-repeat;
 }
+
 .topic {
   text-align: center;
   font-size: 50px;
@@ -191,6 +185,8 @@ p {
   padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 #description-list li {
@@ -294,9 +290,8 @@ ul.timeline > li:before {
 
 #activity-list {
   width: fit-content;
-  margin-left: 150px;
+  margin-left: 5%;
   margin-right: 100px;
-
 }
 
 #activity-list ul {
@@ -336,3 +331,194 @@ margin-bottom: 7px;
   opacity: 1;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #fff0f0;
+    /* overflow-x: hidden; */
+
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  #welcome {
+    padding: 0 !important;
+  }
+
+  #welcome, #about {
+    display: block;
+    min-height: fit-content !important;
+  }
+
+  #title {
+    margin-top: 50px;
+    width: 100% !important;
+    display: block;
+    text-align: center; /* If you want the text inside to be centered */
+  }
+
+  #name {
+    font-size: larger;
+  }
+
+  hr {
+    width: 70%;
+    margin: auto;
+  }
+
+  #occupation {
+    font-size: medium;
+  }
+
+  #image img {
+    width: 100%;
+    height: auto;
+  }
+
+  #about {
+    padding: 10px !important;
+    margin-bottom: 30px;
+    height: fit-content;
+  }
+
+  .topic {
+    text-align: start;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-left: 20px !important;
+  }
+
+  #about-text {
+    font-size: smaller !important;
+    padding: 20px !important;
+    word-wrap: break-word;
+  }
+
+  #about-info {
+    font-size: smaller !important;
+    padding: 20px !important;
+    padding-bottom: 10px !important;
+    min-width: 90%;
+  }
+
+  #about-detail img {
+    width: 25px;
+  }
+
+  .ex-background, .edu-background {
+    background-image: none;
+  }
+
+  .timeline-head {
+    font-size: 20px !important;
+  }
+
+  .timeline-detail {
+    font-size: 15px !important;
+  }
+
+  ul.timeline:before {
+    left: 10px;
+  }
+
+  ul.timeline > li:before {
+    left: 1.5px !important;
+  }
+
+  #timeline-experience, #timeline-education {
+    padding-left: 10px;
+  }
+
+  .skill-list {
+    padding: 5px;
+  }
+  
+
+
+
+  /* แก้ขัดไปก่อน  */
+  #timeline-experience {
+    opacity: 1;
+  }
+
+  #activity-container {
+    opacity: 1;
+  }
+
+
+
+
+
+
+  #certification img{
+    width: 40%;
+    height: auto;
+  }
+
+  #activity-list {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #activity-container {
+    display: block;
+    margin-top: 50px;
+  }
+
+  #carouselPhoto {
+    width: 80%;
+    margin: auto;
+  }
+
+  #project {
+    padding: 0 !important;
+  }
+
+  #extracurricular h1 {
+    margin-bottom: 0 !important;
+  }
+
+  #certification h1 {
+    margin-bottom: 20px !important;
+  }
+
+  #cer-container {
+    display: block;
+  }
+
+  #certification img{
+    width: 100%;
+  }
+
+  #cer-container-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .skill-type {
+    margin-top: 20px;
+  }
+
+  .skill-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #skill {
+    padding: 20px 0;
+  }
+
+  #activity-container {
+    margin-bottom: 10px !important;
+  }
+
+  #experience h1, #education h1, #skill h1, #project h1 {
+    margin-bottom: 0 !important;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+
+}
