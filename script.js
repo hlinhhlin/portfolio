@@ -22,7 +22,7 @@ function isInViewport(element) {
     );
 }
 
-function handleScroll() {
+function handleScrollDesktop() {
     const aboutInfoElement = document.getElementById('about-info');
     const aboutTextElement = document.getElementById('about-text');
     const timelineExElement = document.getElementById('timeline-experience');
@@ -67,6 +67,27 @@ function handleScroll() {
     }
 }
 
-window.addEventListener('scroll', handleScroll);
 
+//not done !
+function handleScrollMobile() {
+   
+}
+
+function isMobile() {
+    return window.matchMedia('(max-width: 600)').matches;
+}
+
+function handleScroll() {
+    if (isMobile()) {
+        handleScrollMobile();
+    } else {
+        handleScrollDesktop();
+    }
+}
+
+
+
+
+window.addEventListener('scroll', handleScroll);
 document.addEventListener('DOMContentLoaded', handleScroll);
+
