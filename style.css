@@ -10,6 +10,10 @@ body {
   background-color: #dbe2ef;
 }
 
+#downloadButton-mobile {
+  display: none;
+}
+
 .font-blue {
   color: #3f72af;
 }
@@ -382,6 +386,11 @@ margin-bottom: 7px;
   #occupation {
     margin-top: 10px;
     font-size: large;
+  }
+
+  #downloadButton-mobile {
+    display: inline;
+    margin-top: 20px;
   }
 
   #image img {
